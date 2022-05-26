@@ -45,6 +45,7 @@ jobs:
       
       - name: Install NPM with JFrog CLI
         run: |
+          jf npm-config --server-id-resolve=saas --server-id-deploy=saas --repo-resolve=npm --repo-deploy=npm
           jf npm install --build-name=my-build-name --build-number=1
 
 
